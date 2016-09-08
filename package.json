@@ -1,21 +1,17 @@
 {
   "name": "react-testing",
   "version": "1.0.0",
-  "description": "a simple react app to practice testing",
+  "description": "a simple skeleton react redux app",
   "main": "index.js",
   "scripts": {
     "start": "node index"
   },
   "repository": {
     "type": "git",
-    "url": "git+ssh://git@gitlab.com/junxianlim/react-testing.git"
+    "url": "git@github.com:junxianlim/react-redux-skeleton.git"
   },
   "author": "lim jun xian",
   "license": "ISC",
-  "bugs": {
-    "url": "https://gitlab.com/junxianlim/react-testing/issues"
-  },
-  "homepage": "https://gitlab.com/junxianlim/react-testing#README",
   "devDependencies": {
     "babel-core": "^6.13.2",
     "babel-loader": "^6.2.5",
