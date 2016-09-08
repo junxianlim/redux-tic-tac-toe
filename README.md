@@ -20,6 +20,8 @@ project for the changes if you want to use the latest version.
 - The skeleton also uses stylus instead of regular css. (Refer to my other react projects
 built from Udemy's courses.)
 
+- Your packages needs may differ from project to project, add and remove at will.
+
 - Installed packages:
   - Babel Packages
   - Redux Devtools
