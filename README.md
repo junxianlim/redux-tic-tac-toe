@@ -31,8 +31,8 @@ built from Udemy's courses.)
   - ReactDOM
   - React
   - React Redux
-  - React Router
+  - UI Router
+  - Redux Thunk
   - Redux Form
-  - Redux Promise
   - Nib
   - Express
