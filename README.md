@@ -11,16 +11,7 @@
 
 # Skeleton React-Redux App
 
-- Updated as of 8th of September 2016.
-
-- Used for Stephen Girder's React Redux and Advanced React Redux Courses.
-Note that there are breaking changes for `Redux Form`. You can check my react blog
-project for the changes if you want to use the latest version.
-
-- The skeleton also uses stylus instead of regular css. (Refer to my other react projects
-built from Udemy's courses.)
-
-- Your packages needs may differ from project to project, add and remove at will.
+- Updated as of 18th of September 2016.
 
 - Installed packages:
   - Babel Packages
