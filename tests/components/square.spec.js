@@ -8,7 +8,7 @@ describe("<Square/>", () => {
   const square = shallow(<Square squares={Array(9)} id={1} markTile={markTile} current_player='x' victory={false} />);
 
   it("renders component", () => {
-    expect(square).to.exist
+    expect(square).to.exist;
   })
 })
 
@@ -17,7 +17,7 @@ describe("Player marks x", () => {
   const square = shallow(<Square squares={squares} id={1} markTile={markTile} current_player='x' victory={false} />);
 
   it("marks square with x", () => {
-    expect(square.find('div').text()).to.equal('x')
+    expect(square.find('div').text()).to.equal('x');
   })
 })
 
@@ -26,6 +26,6 @@ describe("Player marks o", () => {
   const square = shallow(<Square squares={squares} id={1} markTile={markTile} current_player='x' victory={false} />);
 
   it("marks square with o", () => {
-    expect(square.find('div').text()).to.equal('o')
+    expect(square.find('div').text()).to.equal('o');
   })
 })
