@@ -2,9 +2,9 @@ import React from 'react';
 import Square from './square.jsx';
 import Bot from './bot.jsx';
 import { connect } from 'react-redux';
+import { newGame } from '../actions/index';
 
-
-function Main({victory}) {
+function Main({victory, newGame, undoMove}) {
   const squares = [...Array(9).keys()]
 
   function displayWinner() {
@@ -20,6 +20,9 @@ function Main({victory}) {
     <div>
       <div className="game">
         <h1> Tic Tac Toe </h1>
+        <div className="controls">
+          <button onClick={() => { newGame() }} className="btn btn-primary">New Game</button>
+        </div>
         <div className="board">
           {
             squares.map((key) => {
@@ -40,4 +43,4 @@ function mapStateToProps(state) {
   }
 }
 
-export default connect(mapStateToProps)(Main)
+export default connect(mapStateToProps, { newGame })(Main)

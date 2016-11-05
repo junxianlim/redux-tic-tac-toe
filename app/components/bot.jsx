@@ -16,7 +16,6 @@ class Bot extends Component {
     setTimeout(() => {
       if (current_player == 'o' && !victory) {
         this.minimax(squares, current_player, 0)
-        console.log(this.state.best_choice)
         this.props.markTile(current_player, this.state.best_choice)
       }
     }, 10)
@@ -76,8 +75,7 @@ function mapStateToProps(state) {
   return {
     squares: state.game.squares,
     current_player: state.players.current_turn,
-    victory: state.game.victory,
-    history: state.game.history
+    victory: state.game.victory
   }
 }
 
