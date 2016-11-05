@@ -25,6 +25,7 @@
 # Just another tic tac toe with an unbeatable bot built with React and Redux
 
 - Primary purpose of this app was to learn the `minimax` algorithm.
+- [DEMO](https://tictac.limjunxian.com)
 
 - Clone and cd into folder.
 - yarn / npm install.
