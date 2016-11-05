@@ -1,9 +1,16 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import { Provider } from 'react-redux';
+import { createStore, applyMiddleware } from 'redux';
+import reducers from './reducers';
+import styles from './styles/app.styl';
+import Game from './components/game.jsx';
 
-import Main from './components/main.jsx';
+const createStoreWithMiddleware = applyMiddleware()(createStore)
 
 ReactDOM.render(
-  <Main />
+  <Provider store={createStoreWithMiddleware(reducers)} >
+    <Game />
+  </Provider>
   , document.getElementById('app')
 )
