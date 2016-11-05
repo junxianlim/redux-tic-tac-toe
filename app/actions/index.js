@@ -11,9 +11,9 @@ export function markTile(player, key) {
   }
 }
 
-export function newGame() {
+export function newGame(player) {
   return {
     type: NEW_GAME,
-    payload: {}
+    payload: { player: player }
   }
 }

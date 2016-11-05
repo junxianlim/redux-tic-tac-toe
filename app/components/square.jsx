@@ -2,7 +2,7 @@ import React from 'react';
 import { connect } from 'react-redux';
 import { markTile } from '../actions/index';
 
-function Square({ id, squares, markTile, current_player, victory }) {
+export function Square({ id, squares, markTile, current_player, victory }) {
 
   function selectTile() {
     if (current_player == 'x' && !squares[id] && !victory) {

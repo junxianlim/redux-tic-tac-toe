@@ -4,7 +4,7 @@ import Bot from './bot.jsx';
 import { connect } from 'react-redux';
 import { newGame } from '../actions/index';
 
-function Main({victory, newGame, undoMove}) {
+export function Game({victory, newGame}) {
   const squares = [...Array(9).keys()]
 
   function displayWinner() {
@@ -12,7 +12,7 @@ function Main({victory, newGame, undoMove}) {
       if (victory == 'tie') {
         return <div className='victory-message'>It's a {victory} </div>
       }
-      return <div className="victory-message">Player {victory} has won</div>
+      return <div className='victory-message'>Player {victory} has won</div>
     }
   }
 
@@ -21,7 +21,8 @@ function Main({victory, newGame, undoMove}) {
       <div className="game">
         <h1> Tic Tac Toe </h1>
         <div className="controls">
-          <button onClick={() => { newGame() }} className="btn btn-primary">New Game</button>
+          <button onClick={() => { newGame('x') }} className="btn btn-primary">I go first</button>
+          <button onClick={() => { newGame('o') }} className="btn btn-danger">You go first</button>
         </div>
         <div className="board">
           {
@@ -43,4 +44,4 @@ function mapStateToProps(state) {
   }
 }
 
-export default connect(mapStateToProps, { newGame })(Main)
+export default connect(mapStateToProps, { newGame })(Game)
